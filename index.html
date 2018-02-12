@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="scotchApp">
+
+<head>
+  <!-- SCROLLS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+  <!-- SPELLS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController">
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Angular Routing Example</a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#/!">Home</a></li>
+        <li><a href="#!about">About</a></li>
+        <li><a href="#!contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="main" class="container">
+    <div class="row">
+      <div class="col-2">
+        Coloana1
+      </div>
+      <div class="col">
+        <div ng-view></div>
+      </div>
+     
+       
+      
+    </div>
+    <!-- angular templating -->
+		<!-- this is where content will be injected -->
+    
+    
+  </div>
+  
+  <footer class="text-center">
+  </footer>
+  
+</body>
+
+</html>
