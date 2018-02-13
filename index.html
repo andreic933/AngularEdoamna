@@ -5,51 +5,73 @@
 
 <head>
   <!-- SCROLLS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!-- SPELLS -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
   <script src="script.js"></script>
+  <title>Colegiul de Industrie Alimentara "Elena Doamna"</title>
 </head>
 
 <!-- define angular controller -->
-<body ng-controller="mainController">
+<body>
 
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/">Angular Routing Example</a>
-      </div>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#/!">Home</a></li>
-        <li><a href="#!about">About</a></li>
-        <li><a href="#!contact">Contact</a></li>
+ <!--  <nav class="navbar navbar-toggleable-md navbar-light" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="/">Colegiul de Industrie Alimentara "Elena Doamna"</a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="navbar-item" href="#/!">Home</a></li>
+        <li class="nav-item"><a class="navbar-item" href="#!about">About</a></li>
+        <li class="nav-item"><a class="navbar-item" href="#!contact">Contact</a></li>
       </ul>
+  </nav> -->
+<div class="container">
+  <h1><a href="#/!">Colegiul de Industrie Alimentara "Elena Doamna"</a></h1>
+  <div class="navbar navbar-default">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#/!">Home</a></li>
+          <li><a href="#!about">About</a></li>
+          <li><a href="#!contact">Contact</a></li>
+          
+        </ul>
+      </div>
     </div>
-  </nav>
+  </div>
+  
+  
+</div>
 
   <div id="main" class="container">
+    <div class="row"> Row 1
+    </div>
+    <div class="row"> meniu
+      
+    </div> 
     <div class="row">
       <div class="col-2">
         Coloana1
+        <div class="row">row 1</div>
+        <div class="row">row 2</div>
+        <div class="row">row 3</div>
       </div>
-      <div class="col">
+      <div class="col"  ng-controller="mainController">
+       
         <div ng-view></div>
       </div>
-     
+    </div>
        
       
-    </div>
-    <!-- angular templating -->
-		<!-- this is where content will be injected -->
+  
     
     
   </div>
   
   <footer class="text-center">
+    Colegiul de Industrie Alimentara "Elena Doamna", Galati
   </footer>
   
 </body>
