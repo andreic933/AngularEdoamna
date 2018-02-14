@@ -4,76 +4,176 @@
 <html ng-app="scotchApp">
 
 <head>
-  <!-- SCROLLS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <!-- css stuff -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
 
-  <!-- SPELLS -->
+  <!-- angular stuff -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
   <script src="script.js"></script>
+  <script src="animation.js"></script>
   <title>Colegiul de Industrie Alimentara "Elena Doamna"</title>
 </head>
 
 <!-- define angular controller -->
 <body>
+  <div class="container">
+    <h1><a href="#!cine_e_edoamna">Colegiul de Industrie Alimentara "Elena Doamna"</a></h1>
+    <hr>
+        <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
 
- <!--  <nav class="navbar navbar-toggleable-md navbar-light" style="background-color: #e3f2fd;">
-    <a class="navbar-brand" href="/">Colegiul de Industrie Alimentara "Elena Doamna"</a>
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="navbar-item" href="#/!">Home</a></li>
-        <li class="nav-item"><a class="navbar-item" href="#!about">About</a></li>
-        <li class="nav-item"><a class="navbar-item" href="#!contact">Contact</a></li>
-      </ul>
-  </nav> -->
-<div class="container">
-  <h1><a href="#/!">Colegiul de Industrie Alimentara "Elena Doamna"</a></h1>
-  <div class="navbar navbar-default">
-    <div class="navbar-inner">
-      <div class="container">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#/!">Home</a></li>
-          <li><a href="#!about">About</a></li>
-          <li><a href="#!contact">Contact</a></li>
-          
-        </ul>
-      </div>
-    </div>
-  </div>
-  
-  
-</div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#/!" class="primary" data-toggle="dropdown">Despre noi<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#!cine_e_edoamna">Cine a fost Elena Doamna</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Scurt Istoric</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#/!" class="primary" data-toggle="dropdown">Informatii elevi<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#!about">Elevii Scolii</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Admitere</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Bacalaureat</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Regulament Elevi</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#/!" class="primary" data-toggle="dropdown">Informatii Profesori<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#!about">Lista Profesori</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Legislatie</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Catedre si Comisii</a></li>
+                </ul>
+              </li>
+              <!-- <li class="dropdown"> -->
+                <li><a href="#/!" class="primary">Asociatia Elena Doamna</a></li>
+               <!--  <ul class="dropdown-menu">
+                  <li><a href="#!about">Elevii Scolii</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Admitere</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Bacalaureat</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Regulament Elevi</a></li>
+                </ul>
+              </li> -->
+              <li class="dropdown">
+                <a href="#/!" class="primary" data-toggle="dropdown">Proiecte<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#!about">Comenius</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Leonardu</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Erasmus+</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Ecoscoala</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">POS-DRU</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">POR</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Altele</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#/!" class="primary" data-toggle="dropdown">Premii<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#!about">Elevii Scolii</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Admitere</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Bacalaureat</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Regulament Elevi</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#/!" class="primary" data-toggle="dropdown">Calitate<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#!about">Organigrama CEAC</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Regulament CEAC</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Proceduri CEAC</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Plan CEAC</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Sarcini si activitati CEAC</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!contact">Autoevaluare</a></li>
+                </ul>
+              </li>
+              <li><a href="#/!" class="primary">Contact</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
 
-  <div id="main" class="container">
-    <div class="row"> Row 1
-    </div>
-    <div class="row"> meniu
-      
+      <div class="row">
+        <div class="col-lg-3 jumbotron">
+          <h3> Articole</h3>
+          <ul style="list-style-type:square;">
+            <li>Prima pagină</li>
+            <li>Informatii elevi</li>
+            <li>Concursuri şi Olimpiade Şcolare</li>
+            <li>Informatii profesori</li>
+            <li>ABCdar bancar</li>
+            <li>Arhivă</li>
+            <li>Planul de acţiune al şcolii</li>
+            <li>Examene</li>
+            <li>Anunţuri</li>
+          </ul>
+          <hr>
+          <h3> Ultimele noutăţi</h3>
+          <ul style="list-style-type:square">
+            <li>Time to Move 2017</li>
+            <li>Anunţ ERASMUS +</li>
+            <li>Consiliul Elevilor</li>
+            <li>Clase 2016-2017</li>
+            <li>Școala profesională</li>
+            <li>Corijenţe 2017</li>
+            <li>ZIUA ANTIVIOLENȚĂ 5.05.2016</li>
+            <li>Concurs ELEVII AU TALENT!</li>
+            <li>Buget</li>
+            <li>Examene</li>
+          </ul>
+        </div>
+        <div class="col-lg-9" ng-controller="mainController">
+          <div ng-view></div>
+        </div>
+      </div>  
     </div> 
-    <div class="row">
-      <div class="col-2">
-        Coloana1
-        <div class="row">row 1</div>
-        <div class="row">row 2</div>
-        <div class="row">row 3</div>
-      </div>
-      <div class="col"  ng-controller="mainController">
-       
-        <div ng-view></div>
-      </div>
-    </div>
-       
-      
-  
+
+    <footer class="text-center">
+      Colegiul de Industrie Alimentara "Elena Doamna", Galati
+    </footer>
     
-    
-  </div>
-  
-  <footer class="text-center">
-    Colegiul de Industrie Alimentara "Elena Doamna", Galati
-  </footer>
-  
 </body>
 
 </html>

@@ -12,8 +12,8 @@
 			})
 
 			// route for the about page
-			.when('/about', {
-				templateUrl : 'pages/about.html',
+			.when('/cine_e_edoamna', {
+				templateUrl : 'pages/cine_e_edoamna.html',
 				controller  : 'aboutController'
 			})
 
