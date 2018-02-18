@@ -7,7 +7,7 @@
 
 			// route for the home page
 			.when('/', {
-				templateUrl : 'pages/home.html',
+				templateUrl : 'pages/cine_e_edoamna.html',
 				controller  : 'mainController'
 			})
 
@@ -18,8 +18,8 @@
 			})
 
 			// route for the contact page
-			.when('/contact', {
-				templateUrl : 'pages/contact.html',
+			.when('/scurt_istoric', {
+				templateUrl : 'pages/scurt_istoric.html',
 				controller  : 'contactController'
 			});
 	});
