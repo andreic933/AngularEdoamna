@@ -13,14 +13,28 @@
 
 			// route for the about page
 			.when('/cine_e_edoamna', {
-				templateUrl : 'pages/cine_e_edoamna.html',
-				controller  : 'aboutController'
+				templateUrl : 'pages/cine_e_edoamna.html'
+			})
+
+			.when('/elevii_scolii', {
+				templateUrl : 'pages/elevii_scolii.html'
+			})
+
+			.when('/admitere', {
+				templateUrl : 'pages/admitere.html'
+			})
+
+			.when('/regulament', {
+				templateUrl : 'pages/regulament.html'
+			})
+
+			.when('/informatii_elevi', {
+				templateUrl : 'pages/informatii_elevi.html'
 			})
 
 			// route for the contact page
 			.when('/scurt_istoric', {
-				templateUrl : 'pages/scurt_istoric.html',
-				controller  : 'contactController'
+				templateUrl : 'pages/scurt_istoric.html'
 			});
 	});
 
@@ -28,12 +42,4 @@
 	scotchApp.controller('mainController', function($scope) {
 		// create a message to display in our view
 		$scope.message = 'Everyone come and see how good I look!';
-	});
-
-	scotchApp.controller('aboutController', function($scope) {
-		$scope.message = 'Look! I am an about page.';
-	});
-
-	scotchApp.controller('contactController', function($scope) {
-		$scope.message = 'Contact us! JK. This is just a demo.';
 	});

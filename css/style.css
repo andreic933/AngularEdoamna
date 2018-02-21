@@ -52,6 +52,24 @@ hr {
   box-shadow: 1px 1px 1px black;
 }
 
+.glyphicon {
+padding:50px 15px 50px 15px;
+color: #00b2cc;
+font-size: 200px;
+-webkit-transition: all 0.35s ease-in-out;
+-moz-transition: all 0.35s ease-in-out;
+transition: all 0.35s ease-in-out;
+text-shadow: -1px 1px 2px #fff;
+cursor:pointer;
+}
+
+.glyphicon:hover, 
+.glyphicon:active, 
+.glyphicon:focus {
+text-shadow: 2px 3px 15px #006978;
+}
+
+
 nav {
   /*//padding: 20px 0;*/
   background-color: #00838f !important;
@@ -70,4 +88,6 @@ nav {
 .list-group-item {
     box-shadow: 1px 1px 1px black;
 }
+
+
 
